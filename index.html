@@ -1,0 +1,56 @@
+<head>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  	<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
+	<script>
+		var circle = $(".circle");
+		var word = $(".word");
+
+		var currentMousePos = { x: -1, y: -1 };
+		    $(document).mousemove(function(event) 
+		                          {
+		//      console.log("bingo")
+		      var screenWidth = $( document ).width();
+		      var blahx = event.pageX;
+		      var blahy = event.pageY;
+		      var opacity = (screenWidth - blahx) / screenWidth;
+		      $(".circle").css({
+		        "opacity": opacity,
+		        "left": blahx,
+		        "top": blahy
+		    });
+		      $(".word").css({
+		          "opacity": opacity,
+		          "right": blahx,
+		          "top": blahy
+		    });
+		      
+		});
+	</script>
+	<style>
+	.circle{
+	  background: #000000;
+	  width: 189px;
+	  height: 189px;
+	  border-radius: 50%;
+	  position: absolute;
+	}
+
+	.word{
+	  width: 320px;
+	  height: 189px;
+	  position: absolute;
+	}
+	</style>
+</head>
+<body>
+      
+
+<div class="circle"></div>
+<div class="word"><p>word</p></div>
+</body>
