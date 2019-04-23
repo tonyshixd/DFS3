@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+
+.thebar {
+  width: 100vw;
+  height: 10vw;
+  background: white;
+  left: 0;
+  top: 0;
+  position: fixed;
+  border-radius: 0px;
+}
+
+.greybox {
+  width: 40vw;
+  height: 25vw;
+  background: black;
+  opacity: 0.1;
+  top: 20vw;
+  left: 0;
+  position: absolute;
+  z-index: -3;
+}
+
+.box .content {
+  margin: auto;
+}
+
+.content {
+  font-family: '__Porter_5';
+  font-size: 1.5vh;
+  text-align: left;
+  top: 15px;
+  padding-left: 10vw;
+  position: absolute;
+}
+
+.content_white {
+  font-family: '__Porter_5';
+  font-size: 1.5vh;
+  text-align: left;
+  top: 15px;
+  padding-left: 10vw;
+  position: absolute;
+  color: white;
+  opacity: 0;
+}
+
+.menu-toggle {
+  width: 24px;
+  height: 24px;
+  position: fixed;
+  top: 30px;
+  right: 10vw;
+  cursor: pointer;
+}
+
+.menu-toggle.on .one {
+  -moz-transform: rotate(45deg) translate(3px, 3px);
+  -ms-transform: rotate(45deg) translate(3px, 3px);
+  -webkit-transform: rotate(45deg) translate(3px, 3px);
+  transform: rotate(45deg) translate(3px, 3px);
+  background: white;
+}
+
+.menu-toggle.on .two {
+  opacity: 0;
+  background: white;
+}
+
+.menu-toggle.on .three {
+  -moz-transform: rotate(-45deg) translate(6px, -7px);
+  -ms-transform: rotate(-45deg) translate(6px, -7px);
+  -webkit-transform: rotate(-45deg) translate(6px, -7px);
+  transform: rotate(-45deg) translate(6px, -7px);
+  background: white;
+}
+
+.content_white.on {
+  opacity: 100;
+}
+
+.one,
+.two,
+.three {
+  width: 100%;
+  height: 12%;
+  background: black;
+  margin: 4px auto;
+  backface-visibility: hidden;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-variant-caps: all-small-caps;
+  font-weight: bold;
+  font-size: 14px;
+  list-style: none;
+  margin: 10em auto;
+  text-align: center;
+}
+nav ul.hidden {
+  display: none;
+}
+nav ul a {
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  text-decoration: none;
+  color: white;
+  font-size: 3em;
+  line-height: 1.5;
+  width: 90vw;
+  display: block;
+  margin: auto;
+}
+nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.main_content.on{
+  filter:blur(20px);
+  -o-filter:blur(20px);
+  -ms-filter:blur(20px);
+  -moz-filter:blur(20px);
+  -webkit-filter:blur(20px);
+}
+
+.menu-section.on {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+}
+
+.primpiccontainer {
+  width: 40vw;
+  height: 25vw;
+  top: 15vw;
+  left: 10vw;
+  position: relative;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.primpic {
+  width: 40vw;
+  height: auto;
+  align-items: center;
+  overflow: hidden;
+}
+
+#title {
+  z-index: -3;
+  font-family: '__Porter_5';
+  width: auto;
+  font-size: 7vw;
+  text-align: right;
+  font-weight: bold;
+  position: relative;
+  top: 15vw;
+  right: 10vw;
+}
+
+
+#u472 {
+    color: #F0BF22;
+}
+
+#u472-3 {
+    color: #346AAF;
+}
+
+#u472-4 {
+    color: #DA473B;
+}
+
+#u472-6 {
+    color: #7F7F7F;
+}
+
+.arrow {
+  z-index: -3;
+  height: 10vw;
+  width: 6vw;
+  right: 9.8vw;
+  top: 34vw;
+  position: absolute;
+}
+
+.text1 {
+  z-index: -3;
+  width: 78.5vw;
+  margin: auto;
+  text-align: center;
+  font-size: 1.5vh;
+  min-height: 137px;
+  background-color: transparent;
+  text-align: justify;
+  font-family: '__Avenir Next_5';
+  font-weight: 500;
+  position: relative;
+  top: 14vw;
+}
+
+.sec_content {
+  z-index: -3;
+  width: 100vw;
+  height: 65vh;
+  position:relative;
+  top: 20vh;
+
+}
+
+.header1 {
+  z-index: -3;
+  font-family: '__Porter_5';
+  font-size: 4vh;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  top: 1%;
+}
+
+
+.photo1 {
+  width: 78.5vw;
+  height: 45vw;
+  position: relative;
+  z-index: -2;
+  top: 50%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.ph1 {
+  width: inherit;
+  height: auto;
+  align-items: center;
+  overflow: hidden;
+}
+
+.text2 {
+  z-index: -3;
+  width: 78.5vw;
+  text-align: left;
+  text-align: justify;
+  font-size: 1.5vh;
+  min-height: 137px;
+  background-color: transparent;
+  font-family: '__Avenir Next_5';
+  font-weight: 500;
+  top: 2%;
+  position: relative;
+  margin: auto;
+}
+
+.footer {
+  background: black;
+  width: 100vw;
+  height: 6vh;
+  text-align: center;
+  margin: auto;
+  top: 40vw;
+  position: relative;
+}
+
+.p1{
+  top: 30%;
+  font-family: '__Avenir Next_5';
+  font-weight: 500;
+  font-size: 1.3vw;
+  color: white;
+  position: relative;
+}
+
+@media only screen and (min-aspect-ratio: 16/10) {
+  .main_content {
+    position: relative;
+    top: -8vh;
+  }
+  .arrow {
+    z-index: -3;
+    height: 10vw;
+    width: 6vw;
+    right: 9.8vw;
+    top: 23vw;
+    position: absolute;
+  }
+  #title {
+    z-index: -3;
+    font-family: '__Porter_5';
+    width: auto;
+    font-size: 6vw;
+    text-align: right;
+    font-weight: bold;
+    position: relative;
+    top: 4vw;
+    right: 10vw;
+  }
+  .text1 {
+    z-index: -3;
+    width: 45vw;
+    text-align: center;
+    font-size: 2vh;
+    min-height: 137px;
+    background-color: transparent;
+    text-align: justify;
+    font-family: '__Avenir Next_5';
+    font-weight: 500;
+    position: absolute;
+    top: 42vw;
+    right: 10.5vw;
+  }
+  .sec_centent {
+    top: 10vh;
+  }
+  .
+}
+
+@media only screen and (max-width: 600px) {
+  .main_content {
+    margin: auto;
+
+  }
+
+  .thebar {
+    height: 9vh;
+  }
+
+  .primpiccontainer {
+    width: 100vw;
+    height: 50vw;
+    top: 10vw;
+    left: 0;
+    position: relative;
+    z-index: -2;
+    overflow: hidden;
+  }
+  .primpic {
+    width: 100vw;
+    height: auto;
+    align-items: center;
+    overflow: hidden;
+  }
+  .arrow {
+    opacity: 0;
+  }
+  #title {
+    z-index: -3;
+    font-family: '__Porter_5';
+    width: auto;
+    font-size: 12vw;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    top: 10vh;
+    right: 0;
+    margin: auto;
+  }
+  .text1 {
+    z-index: -3;
+    width: 78.5vw;
+    margin: auto;
+    text-align: center;
+    font-size: 3.5vw;
+    min-height: 137px;
+    background-color: transparent;
+    text-align: justify;
+    font-family: '__Avenir Next_5';
+    font-weight: 500;
+    position: relative;
+    top: 8vh;
+  }
+  .photo1 {
+    width: 100vw;
+    height: 45vw;
+    position: relative;
+    z-index: -2;
+    top: 8vh;
+    margin: auto;
+    overflow: hidden;
+  }
+  .header1 {
+    z-index: -3;
+    font-family: '__Porter_5';
+    font-size: 4vh;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 44vh;
+    padding-top: 3vw;
+  }
+  .text2 {
+    z-index: -3;
+    width: 78.5vw;
+    text-align: left;
+    text-align: justify;
+    font-size: 3.5vw;
+    min-height: 137px;
+    background-color: transparent;
+    font-family: '__Avenir Next_5';
+    font-weight: 500;
+    top: 30vw;
+    left: 11vw;
+    position: relative;
+  }
+  .p1{
+    top: 30%;
+    font-family: '__Avenir Next_5';
+    font-weight: 500;
+    font-size: 1.3vh;
+    color: white;
+    position: relative;
+  }
+}
+
+@media only screen and (max-aspect-ratio: 9/18) {
+  .thebar {
+    height: 15vh;
+  }
+
+  .header1 {
+    z-index: -3;
+    font-family: '__Porter_5';
+    font-size: 2.7vh;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 37vh;
+    padding-top: 3vw;
+  }
+  .text2 {
+    z-index: -3;
+    width: 78.5vw;
+    text-align: left;
+    text-align: justify;
+    font-size: 3.5vw;
+    min-height: 137px;
+    background-color: transparent;
+    font-family: '__Avenir Next_5';
+    font-weight: 500;
+    top: 40vw;
+    left: 11vw;
+    position: relative;
+  }
+  .footer {
+    background: black;
+    width: 100vw;
+    height: 6vh;
+    text-align: center;
+    margin: auto;
+    top: 60vw;
+    position: relative;
+  }
+
+  .p1{
+    top: 30%;
+    font-family: '__Avenir Next_5';
+    font-weight: 500;
+    font-size: 1.3vh;
+    color: white;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 835) and (max-width: 376) {
+  .thebar {
+    height: 12vh;
+  }
+  .header1 {
+    z-index: -3;
+    font-family: '__Porter_5';
+    font-size: 2.7vh;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 33vh;
+    padding-top: 3vw;
+  }
+  .text2 {
+    z-index: -3;
+    width: 78.5vw;
+    text-align: left;
+    text-align: justify;
+    font-size: 3.5vw;
+    min-height: 137px;
+    background-color: transparent;
+    font-family: '__Avenir Next_5';
+    font-weight: 500;
+    top: 40vw;
+    left: 11vw;
+    position: relative;
+  }
+  .footer {
+    background: black;
+    width: 100vw;
+    height: 6vh;
+    text-align: center;
+    margin: auto;
+    top: 60vw;
+    position: relative;
+  }
+
+  .p1{
+    top: 30%;
+    font-family: '__Avenir Next_5';
+    font-weight: 500;
+    font-size: 1.3vh;
+    color: white;
+    position: relative;
+  }
+}
+
+@font-face {
+    font-family: '__Porter_5';
+    src: url('../fonts/porter_bold-webfont.eot');
+    src: local('☺'), url('../fonts/porter_bold-webfont.woff') format('woff'), url('../fonts/porter_bold-webfont.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: '__Avenir Next_5';
+    src: url('../fonts/avenirnext-medium.eot');
+    src: local('☺'), url('../fonts/avenirnext-medium.woff') format('woff'), url('../fonts/avenirnext-medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
